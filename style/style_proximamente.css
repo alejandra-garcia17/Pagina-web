@@ -1,0 +1,47 @@
+ html, body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    overflow: hidden;
+}
+
+.cinematic-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.image-visible {
+    opacity: 1;
+}
+
+/* Estilo para el botón de regreso con forma de flecha y efecto de relieve */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 30px 50px; /* Tamaño del botón */
+    background-color: #ff00cc; /* Color de fondo */
+    color: #000000; /* Color del texto */
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición de color de fondo y efecto de relieve */
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%); /* Forma de flecha */
+    display: flex;
+    align-items: center;
+}
+
+.back-button img {
+    margin-right: 8px; /* Espaciado entre la flecha y el texto */
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el ratón por encima */
+    transform: scale(1.05); /* Efecto de relieve al pasar el ratón por encima */
+}

@@ -1,0 +1,91 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier monospace;
+
+}
+h1  {
+    padding : 0.8em;
+    border: 0.2em  solid #ffffff;
+    background-color: #00cdfb;
+    border-radius: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 40px;
+}
+
+#game {
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#bottom {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+button {
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+    
+}
+
+.cell {
+    width: 50%;
+    height: 50%;
+    opacity: 0.4;
+    float: left;
+}
+
+.cell.active {
+    opacity: 1;
+}
+
+.cell:nth-child(1) { background: yellow;}
+.cell:nth-child(2) { background: red;}
+.cell:nth-child(3) { background: purple;}
+.cell:nth-child(4) { background: blue;}
+
+
+
+/* Estilo para el botón de regreso con forma de flecha y efecto de relieve */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 30px 50px; /* Tamaño del botón */
+    background-color: #ff00cc; /* Color de fondo */
+    color: #000000; /* Color del texto */
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición de color de fondo y efecto de relieve */
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%); /* Forma de flecha */
+    display: flex;
+    align-items: center;
+}
+
+.back-button img {
+    margin-right: 8px; /* Espaciado entre la flecha y el texto */
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el ratón por encima */
+    transform: scale(1.05); /* Efecto de relieve al pasar el ratón por encima */
+}

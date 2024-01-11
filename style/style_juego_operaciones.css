@@ -1,0 +1,94 @@
+ html, body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #000000;
+    background-image: url('../img/fondo_operaciones.jpg');
+}
+h1  {
+    padding : 0.8em;
+    border: 0.2em  solid #000;
+    background-color: #00cdfb;
+    border-radius: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 40px;
+}
+
+.center-container {
+    background-color:  #f2ff00;
+    max-width: 50em;
+    border: 0.5em  solid #000;
+    border-radius: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+.center-left {
+    font-size: 90px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    align-items: center;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+
+}
+.center-right {
+    width: 30%;
+}
+.msj {
+    font-size: 40px;
+    height: 50px;
+}
+
+.option {
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #c082d9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.option:hover {
+    background-color: #45a049; /* Cambio de color al pasar el ratón por encima */
+    transform: scale(1.05); /* Efecto de relieve al pasar el ratón por encima */
+}
+
+
+/* Estilo para el botón de regreso con forma de flecha y efecto de relieve */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 30px 50px; /* Tamaño del botón */
+    background-color: #ff00cc; /* Color de fondo */
+    color: #000000; /* Color del texto */
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición de color de fondo y efecto de relieve */
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%); /* Forma de flecha */
+    display: flex;
+    align-items: center;
+}
+
+.back-button img {
+    margin-right: 8px; /* Espaciado entre la flecha y el texto */
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el ratón por encima */
+    transform: scale(1.05); /* Efecto de relieve al pasar el ratón por encima */
+}

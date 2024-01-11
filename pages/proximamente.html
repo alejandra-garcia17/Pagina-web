@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla con Rectángulos</title>
+    <link rel="stylesheet" href="../style/style_proximamente.css">
+</head>
+<body>
+    <img id="cinematicImage" class="cinematic-image" src="../img/proximamente.jpg" alt="Imagen Cinemática">
+    <!-- Repite este bloque para los demás rectángulos -->
+    <a href="../index.html" class="back-button"></a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        var cinematicImage = document.getElementById("cinematicImage");
+
+        // Añade la clase para mostrar la imagen con la transición después de que la página se haya cargado completamente
+        cinematicImage.classList.add("image-visible");
+    });
+</script>
+</body>
+</html>

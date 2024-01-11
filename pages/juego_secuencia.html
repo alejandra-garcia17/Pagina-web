@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Secuencia</title>
+    <link rel="stylesheet" href="../style/style_juego_secuencia.css">
+</head>
+<body>
+    <audio id="acierto">
+        <source src="../acierto.mp3">
+    </audio>
+    <audio id="fallo">
+        <source src="../fallo.mp3">
+    </audio>
+    <h1>Juego de Secuencia</h1>
+    <div id="game">
+        <div class="cell" pos="1"></div>
+        <div class="cell" pos="2"></div>
+        <div class="cell" pos="3"></div>
+        <div class="cell" pos="4"></div>
+    </div>
+    <div id="bottom">
+        <div id="message"></div>
+        <button id="start">Iniciar</button>
+    </div>
+    <a href="../index.html" class="back-button"></a>
+    <script src="../js/juegoSecuencia.js"></script>
+</body>
+</html>

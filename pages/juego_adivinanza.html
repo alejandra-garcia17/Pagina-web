@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanzas</title>
+    <link rel="stylesheet" href="../style/style_juego_adivinanzas.css">
+</head>
+<body>
+    <audio id="acierto">
+        <source src="../acierto.mp3">
+    </audio>
+    <audio id="fallo">
+        <source src="../fallo.mp3">
+    </audio>
+
+    <div class="center-container">
+        <h1>Juego de Adivinanzas</h1>
+        <div class="button-row">
+
+            <button id="btn1"><img id="imgBoton"></button>
+
+        </div>
+        <div class="button-row">
+            <button id="btn2" onclick="SeleccionarRespuesta(this)"></button>
+            <button id="btn3" onclick="SeleccionarRespuesta(this)"></button>
+            <button id="btn4" onclick="SeleccionarRespuesta(this)"></button>
+        </div>
+    </div>
+
+        <!-- Botón de regreso al índice -->
+        <a href="../index.html" class="back-button"></a>
+
+    <script src="../js/juegoAdivinanza.js"></script>
+</body>
+</html>

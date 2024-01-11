@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Operaciones</title>
+    <link rel="stylesheet" href="../style/style_juego_operaciones.css">
+</head>
+<body>
+    <audio id="acierto">
+        <source src="../acierto.mp3">
+    </audio>
+    <audio id="fallo">
+        <source src="../fallo.mp3">
+    </audio>
+    <h1>Juego de Operaciones</h1>
+    <div class="center-container">
+        <div class="center-left">
+            <div class="container-operation">
+                <span id="sum"> 9+9 = </span>
+                <span class="result" id="result">18</span>
+            </div>
+            <span id="msj" class="msj">excelente</span>
+        </div>
+        <div class="center-right">
+            <span id="op1" class="option" onclick="SeleccionarRespuesta(this)">19</span>
+            <span id="op2" class="option" onclick="SeleccionarRespuesta(this)">18</span>
+            <span id="op3" class="option" onclick="SeleccionarRespuesta(this)">18</span>
+        </div>
+        <!-- Botón de regreso al índice -->
+        <a href="../index.html" class="back-button"></a>
+    </div>
+    <script src="../js/juegoOperaciones.js"></script>
+</body>
+</html>
